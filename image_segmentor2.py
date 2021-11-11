@@ -64,7 +64,7 @@ segmented = importr('segmented')
 nls_multstart = importr('nls.multstart')
 
 r_source = robjects.r['source']
-r_source('C:/Users/anjonas/PycharmProjects/LesionZoo/f_params.R')
+r_source('C:/Users/anjonas/PycharmProjects/HaloDetector/f_params.R')
 r_getparams = robjects.globalenv['get_params']
 
 # ======================================================================================================================

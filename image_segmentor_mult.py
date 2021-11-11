@@ -2,7 +2,7 @@
 # ======================================================================================================================
 # Author: Jonas Anderegg, jonas.anderegg@usys.ethz.ch
 # Project: LesionZoo
-# Date: 15.03.2021
+# Last edited. 2021-11-11
 # ======================================================================================================================
 
 import sys
@@ -71,7 +71,7 @@ segmented = importr('segmented')
 nls_multstart = importr('nls.multstart')
 
 r_source = robjects.r['source']
-r_source('C:/Users/anjonas/PycharmProjects/LesionZoo/f_params.R')
+r_source('C:/Users/anjonas/PycharmProjects/HaloDetector/f_params.R')
 r_getparams = robjects.globalenv['get_params']
 
 # ======================================================================================================================
@@ -350,12 +350,6 @@ class ImageSegmentor:
                         min_length_profile=60,
                         plot=False
                     )
-                    # # save clusters for first lesion for inspection
-                    # if i == 0:
-                    #     try:
-                    #         fig.savefig(self.path_result_cluster / (image_name + '.png'), dpi=2400)
-                    #     except AttributeError:
-                    #         fig.figure.savefig(self.path_result_cluster / (image_name + '.png'), dpi=2400)
                     plt.close()
 
                     # if there are no complete profiles, fef.cluster_profiles() returns df = None
