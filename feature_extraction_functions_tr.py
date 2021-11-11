@@ -9,7 +9,6 @@ import utils_tr as utils_r
 import utils as utils
 from scipy import ndimage as ndi
 from scipy import signal
-import math
 
 def get_color_spaces(patch):
     """

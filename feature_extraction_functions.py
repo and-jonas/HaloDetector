@@ -12,7 +12,6 @@ from scipy.spatial import distance
 from scipy import ndimage as ndi
 from scipy import signal
 from scipy.cluster.vq import kmeans
-import math
 
 
 def get_color_spaces(patch):
